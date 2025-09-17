@@ -36,3 +36,19 @@ public class NumStairs {
 
 
 // Right Aligned Stairs
+import java.util.Scanner; 
+
+public class NumStairsRIGHT {
+    public static void main(String[] args) {
+        System.out.println("Enter a character: ");
+        Scanner input = new Scanner(System.in);
+        String character = input.next();
+        
+        System.out.println("Enter number of levels: ");
+        int value = input.nextInt();
+        
+        for () {
+            System.out.print();
+        }
+    }
+}
