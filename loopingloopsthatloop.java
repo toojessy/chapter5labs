@@ -61,3 +61,37 @@ public class NumStairsRIGHT {
 
 
 // Menu Repetition
+import java.util.Scanner;
+import java.time.LocalDateTime;
+
+public class Menu {
+    public static void main(String[] args) {
+        System.out.println("Welcome to the menu program! Please select an option:  \n" + "1) Say hello! \n" + "2) Display current time \n" + "3) Exit \n");
+        Scanner input = new Scanner(System.in);
+        int character = input.nextInt();
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        
+        final int HELLO = 1;
+        final int CURRENT_TIME = 2;
+        final int EXIT = 3;
+        
+        do {
+            System.out.println("Hello! It's a nice day to chat isn't it?");
+            if (character == 1) {
+                System.out.print(HELLO);
+            }
+        }
+    }
+}
+        
+        
+       // do {
+        //    System.out.println("The current date and time is" + currentDateTime);
+       //}
+       // while (character = 2);
+        
+       // do {
+     //       System.out.println("Bye now!");
+     //   }
+      //  while (character = 3);
+    
