@@ -45,10 +45,16 @@ public class NumStairsRIGHT {
         String character = input.next();
         
         System.out.println("Enter number of levels: ");
-        int value = input.nextInt();
+        int levels = input.nextInt();
         
-        for () {
-            System.out.print();
+        for (int i = 1; i <= levels; i++) {
+            for (int j = 1; j <= levels - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print(character);
+            }
+            System.out.println();
         }
     }
 }
