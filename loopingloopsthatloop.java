@@ -66,32 +66,23 @@ import java.time.LocalDateTime;
 
 public class Menu {
     public static void main(String[] args) {
-        System.out.println("Welcome to the menu program! Please select an option:  \n" + "1) Say hello! \n" + "2) Display current time \n" + "3) Exit \n");
+       // System.out.println("Welcome to the menu program! Please select an option:  \n" + "1) Say hello! \n" + "2) Display current time \n" + "3) Exit \n");
         Scanner input = new Scanner(System.in);
-        int character = input.nextInt();
+        int character;;
         LocalDateTime currentDateTime = LocalDateTime.now();
         
-        final int HELLO = 1;
-        final int CURRENT_TIME = 2;
-        final int EXIT = 3;
-        
         do {
-            System.out.println("Hello! It's a nice day to chat isn't it?");
+             System.out.println("Welcome to the menu program! Please select an option:  \n" + "1) Say hello! \n" + "2) Display current time \n" + "3) Exit \n");
+            character = input.nextInt();
             if (character == 1) {
-                System.out.print(HELLO);
+                System.out.print("Hello! It's a nice day to chat isn't it? \n");
             }
-        }
+            else if (character == 2) {
+                System.out.println("The current date and time is " + currentDateTime + "\n");
+            }
+            else {
+                System.out.println("Bye now!");
+            }
+        } while (character != 3);
     }
 }
-        
-        
-       // do {
-        //    System.out.println("The current date and time is" + currentDateTime);
-       //}
-       // while (character = 2);
-        
-       // do {
-     //       System.out.println("Bye now!");
-     //   }
-      //  while (character = 3);
-    
